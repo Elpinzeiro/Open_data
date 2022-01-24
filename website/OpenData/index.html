@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OpenData- Digital Agency</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Favicons
+		================================================== -->
+	
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+	<!-- Stylesheet
+		================================================== -->
+	<link rel="stylesheet" type="text/css"  href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+	<script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+	
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+		
+	<script src="myscript.js"></script>
+	<link rel="stylesheet" type="text/css"  href="mystyle.css">		
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+	<!-- Navigation -->
+	<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+	  <div class="container"> 
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+		  <a class="navbar-brand page-scroll" href="#page-top"><i class="fa fa-moon-o fa-rotate-90"></i> OpenData</a> </div>
+		
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="#page-top" class="page-scroll">Home</a></li>
+			<li><a href="#services" class="page-scroll">Use Cases</a></li>
+			<li><a href="#strutture" class="page-scroll">Buildings</a></li>
+			<li><a href="#biblioteche" class="page-scroll">Libraries</a></li>
+			<li><a href="#orario_biblioteche" class="page-scroll">Libraries timetable</a></li>
+			<li><a href="#dati_dataverse" class="page-scroll">Datasets</a></li>
+			<li><a href="#team" class="page-scroll">Team</a></li>
+			<li><a href="#contact" class="page-scroll">Contact</a></li>
+		  </ul>
+		</div>
+		<!-- /.navbar-collapse --> 
+	  </div>
+	  <!-- /.container-fluid --> 
+	</nav>
+	
+	<!-- Header -->
+	<header id="header">
+	  <div class="intro text-center">
+		<div class="overlay">
+		  <div class="container">
+			<div class="row">
+			  <div class="intro-text">
+				<h1>Welcome to <span class="brand">OpenData</span></h1>
+				<p>Some practical examples about what could students realize if unige open data were accessible</p>
+				<a href="#services" class="btn btn-default btn-lg page-scroll">Learn More</a> </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</header>
+	
+	<!-- Services Section -->
+	<div id="services" class="text-center">
+	  <div class="container">
+		<div class="col-md-8 col-md-offset-2 section-title">
+		  <h2>Our Use Cases</h2>
+		  <p>We mainly analyzed two different use cases.
+			One uses static data and the other dynamic</p>
+		</div>
+		<div class="row">
+		  <div class="col-xs-6 col-md-3"> </i>
+			
+		  </div>
+		  <div class="col-xs-6 col-md-3"> <i class="fa fa-desktop"></i>
+			<h4>Static</h4>
+			<p>In this case we used a type of information that remains unchanged over time, such as the accessibility of a classroom by a disabled student</p>
+		 </div>
+		 <div class="col-xs-6 col-md-3"> <i class="fa fa-rocket"></i>
+			<h4>Dynamic</h4>
+			<p>On the contrary, the availability of places in a university library is information subject to rapid changes and therefore needs to be updated frequently.</p>
+		 </div>
+		  <div class="col-xs-6 col-md-3"> ></i>
+			
+		  </div>
+		  
+		</div>
+	  </div>
+	</div>
+	
+	<!-- About Section -->
+	<div id="strutture" class="section">
+	  <div class="container">
+		<div class="col-md-8 col-md-offset-2 section-title text-center">
+		  <h2>Buildings - Static Use Case</h2>
+		  <p>Thanks to the leaflet library and the openstreetmap maps, it was possible to show the accessibility of the classrooms by simply querying the dataverse server which will respond with a json file</p>
+		</div>
+			<div class="map-wrap" >
+				<div id="map_building" text-align: center;></div>
+			</div>
+		<div class="row" justify-content: center>
+		  <div class="column23">			
+		  </div>
+		</div>		
+	  </div>
+	</div>
+	
+	<!-- About Section -->
+	<div id="biblioteche" class="section">
+	  <div class="container">
+		<div class="col-md-8 col-md-offset-2 section-title text-center">
+		  <h2>Libraries - Dynamic use case</h2>
+		  <p>If, on the other hand, we want to show content that is subject to rapid changes over time, such as, for example, the availability of seats in a library. It will be necessary to query an endpoint external to the dataverse server that has the updated values.</p>
+		</div>
+		<div id="map_library"></div> 		
+	  </div> 
+	</div>
+	
+	<div id="orario_biblioteche" class="section">
+	  <div class="container">
+		<div class="col-md-8 col-md-offset-2 section-title text-center">
+		  <h2>Libraries timetable</h2>
+		</div>
+		<table id="timetable"></table>	
+	  </div> 
+	</div>
+	
+	<div id="dati_dataverse" class="section">
+	  <div class="container">
+		<div class="col-md-8 col-md-offset-2 section-title text-center">
+		  <h2>Unige datasets</h2>
+		  <p>Here there are all the datasets published by Unige retrieved by Dataverse API:<br>
+		  https://demo.dataverse.org/api/dataverses/${dataverseAlias}/contents<br>
+		  https://demo.dataverse.org/api/datasets/${datasetId}</p>
+		  <table id="datasets_table"></table>
+		</div>		
+	  </div> 
+	</div>
+	
+	<div id="dataverse" class="section">
+	  <div class="container">
+		<div class="col-md-8 col-md-offset-2 section-title text-center">
+		  <h2>Unige datasets tree</h2>
+		  <p>Using Dataverse API https://demo.dataverse.org/api/datasets/:persistentId/dirindex?persistentId=doi it's possible to have a tree view of the datasets</p>
+		  <a href="https://demo.dataverse.org/api/datasets/:persistentId/dirindex?persistentId=doi:10.70122/FK2/FMEIW1"><u>Dataset Unige</u></a><br>
+		  <a href="https://demo.dataverse.org/api/datasets/:persistentId/dirindex?persistentId=doi:10.70122/FK2/UZFUPK"><u>Empty Dataset</u></a>
+		</div>
+	  </div> 
+	</div>
+	
+
+	<!-- Team Section -->
+	<div id="team" class="text-center">
+	  <div class="container">
+		<div class="col-md-8 col-md-offset-2 section-title">
+		  <h2>Meet the Team</h2>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor apibus lornare diam commodo nibh.</p>
+		</div>
+		<div id="row">
+		  <div class="col-md-3 col-sm-6 team">
+			
+		  </div>
+		  <div class="col-md-3 col-sm-6 team">
+			<div class="thumbnail"> <img src="img/team/francesco.png" alt="..." class="img-circle team-img">
+			  <div class="caption">
+				<h3>Francesco Mantovani</h3>
+				<p>Student</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-3 col-sm-6 team">
+			<div class="thumbnail"> <img src="img/team/elisa.jpeg" alt="..." class="img-circle team-img">
+			  <div class="caption">
+				<h3>Elisa Zilich</h3>
+				<p>Student</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-md-3 col-sm-6 team">
+			
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<!-- Contact Section -->
+	<div id="contact" class="text-center">
+	  <div class="overlay">
+		<div class="container">	
+			<div class="social">
+			  <ul>
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+				<li><a href="#"><i class="fa fa-github"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<div id="footer">
+	  <div class="container text-center">
+		<div class="fnav">
+		  <p>Copyright &copy; 2021 OpenData </p>
+		</div>
+	  </div>
+	</div>
+
+</body>
+</html>
