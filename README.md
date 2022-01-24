@@ -20,4 +20,4 @@ see documentation [here]
 
 
 
-*for more information about the operation and aims of the project, read the [presentation]https://github.com/Elpinzeiro/Open_data/blob/main/Project%20presentation.pptx carefully*
+*for more information about the operation and aims of the project, read the [presentation](https://github.com/Elpinzeiro/Open_data/blob/main/Project%20presentation.pptx) carefully*
