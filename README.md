@@ -1,6 +1,6 @@
 # Open_data
 ## Requirements:
-- have a Tomcat installation on which to load the Libraries web application
+- have Tomcat 7+ installed.
 
 ## Step 1
 Upload the Libraries webapp (located in the EndPoint folder) to Tomcat as follows:
