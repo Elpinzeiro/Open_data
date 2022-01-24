@@ -1,4 +1,4 @@
-# Open_data
+# Open_data project
 ## Requirements:
 - have Tomcat 7+ installed.
 
