@@ -3,7 +3,7 @@
 - have Tomcat 7+ installed.
 
 ## Step 1
-Upload the Libraries webapp (located in the EndPoint folder) to Tomcat as follows:
+Upload the Libraries webapp (located in the [EndPoint](https://github.com/Elpinzeiro/Open_data/tree/main/EndPoint) folder) to Tomcat as follows:
 - copy the compressed [Libraries.war](https://github.com/Elpinzeiro/Open_data/blob/main/EndPoint/Libraries.war) file into the Tomcat "webapps" folder.
 
 
