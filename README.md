@@ -17,3 +17,7 @@ you can test the correct activation of Tomcat by browsing to localhost: 8080
 ## Step 3
 Launch the [index](https://github.com/Elpinzeiro/Open_data/blob/main/website/OpenData/index.html) web page, inside the SitoWeb / OpenData folder.
 see documentation [here]
+
+
+
+*for more information about the operation and aims of the project, read the [presentation]https://github.com/Elpinzeiro/Open_data/blob/main/Project%20presentation.pptx carefully*
